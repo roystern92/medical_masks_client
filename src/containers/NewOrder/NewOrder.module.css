@@ -1,0 +1,785 @@
+.NewOrder {
+  overflow: hidden;
+  background-color: rgb(241, 127, 33);
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Heebo", sans-serif;
+}
+
+.Title {
+  
+  margin-top: 40px;
+  width: 100%;
+  text-align: center;
+  font-family: "Heebo", sans-serif;
+}
+
+.NewOrder .Title h1 {
+  letter-spacing: 1px;
+  margin: 0;
+  color: white;
+  font-weight: bold;
+}
+
+.Title h1 span {
+  color: rgb(91, 130, 155);
+}
+
+.NewOrder .Line {
+  background-color: rgb(91, 130, 155);
+  width: 70%;
+  height: 5px;
+  border-radius: 5px;
+}
+
+.SubTitles {
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(94, 130, 155);
+}
+
+
+.SubTitles h1,
+.SubTitles h3 {
+  margin: 0;
+  color: white;
+}
+
+.SubTitles .Sale {
+  font-weight: bolder;
+  text-decoration: line-through;
+  text-decoration-thickness: 0.2rem;
+  color: rgb(241, 127, 33);
+}
+
+.NewOrder .SubTitles h1 {
+  font-size: 1.2rem;
+}
+
+.NewOrder .SubTitles h3 {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.Line {
+  background-color: rgb(241, 127, 33);
+  width: 60%;
+  height: 3px;
+  border: none;
+  text-align: center;
+}
+
+.Body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+}
+
+.Body .Test {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 50px;
+}
+.MaskInfo {
+  max-width: 60%;
+  margin-top: 20px;
+  border-radius: 7%;
+}
+
+.MaskItemInfo {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.MaskItemInfo h4 {
+  margin: 10px 0;
+  font-family: "Heebo", sans-serif;
+  color: white;
+  text-align: end;
+  font-weight: bold;
+  font-size: 0.75rem;
+  direction: rtl;
+}
+
+.MaskItemInfo img {
+  margin: 0 10px;
+  height: 20px;
+  width: 20px;
+}
+
+.MaskPicture {
+  position: absolute;
+  left: 0;
+  display: grid;
+}
+
+.MaskPicture img {
+  top: 0;
+  position: absolute;
+  transform: rotate(52deg);
+  margin-left: 25px;
+  margin-top: 20px;
+  max-width: 80%;
+}
+
+.OrderForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Bottom {
+  width: 100%;
+}
+
+.Middle {
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.MiddleTitles {
+  display: none;
+}
+
+@media (min-width: 170px) {
+  .SubTitles .Line {
+    background-color: rgb(241, 127, 33);
+    width: 70%;
+    height: 3px;
+  }
+  .SubTitles .LineThin {
+    width: 70%;
+    height: 1px;
+    background-color: rgb(241, 127, 33);
+    border: none;
+    text-align: center;
+  }
+
+  .NewOrder .SubTitles h1 {
+    font-size: 0.8rem;
+  }
+
+  .NewOrder .SubTitles h3 {
+    font-size: 0.5rem;
+  }
+
+  .Body .Test {
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  .Title {
+    margin-top: 15px;
+  }
+ 
+  .NewOrder .Title h1 {
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  .MaskItemInfo h4 {
+    font-size: 6px;
+    margin: 6px 0;
+  }
+
+  .MaskItemInfo img {
+    margin: 0 8px;
+    height: 10px;
+    width: 10px;
+  }
+
+  .MaskPicture {
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  }
+
+  .MaskPicture img {
+    max-width: 100%;
+    /* padding-left: 40%; */
+    /* left: -25px; */
+    top: 29px;
+  }
+
+  .OrderForm {
+    width: 70%;
+  }
+}
+
+
+
+@media (min-width: 360px) {
+  /* iphone 5 */
+
+  .NewOrder .Line {
+    height: 6px;
+  }
+
+  .Title {
+    margin-top: 25px;
+  }
+
+  .NewOrder .Title h1 {
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+
+  .Body .Test {
+    margin-bottom: 50px;
+  }
+  .MaskItemInfo h4 {
+    font-size: 12px;
+    margin: 8px 0;
+  }
+
+  .MaskItemInfo img {
+    margin: 0 9px;
+    height: 13px;
+    width: 13px;
+  }
+
+
+  .MaskPicture {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+
+  .MaskPicture img {
+    max-width: 120%;
+    /* padding-left: 40%; */
+    left: 0;
+    top: 20px;
+  }
+
+  .OrderForm {
+    width: 270px;
+  }
+
+
+}
+
+@media (min-width: 400px) {
+  /* iphone 8 + */
+  .MaskInfo{
+    margin-top: 0;
+    margin-right: 3%;
+  }
+
+  .NewOrder {
+    overflow: hidden;
+  }
+  .NewOrder .Title .Line {
+    height: 8px;
+  }
+
+  .NewOrder  .SubTitles .Line {
+    background-color: rgb(241, 127, 33);
+    width: 70%;
+    height: 5px;
+  }
+
+  .SubTitles .LineThin {
+    width: 70%;
+    height: 2px;
+  }
+  
+  .NewOrder .SubTitles h1 {
+    font-size: 1.7rem;
+    width: 100%;
+    text-align: center;
+    padding: 0 20px;
+  }
+  
+  .NewOrder .SubTitles h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 1.3rem;
+  }
+
+  .Title {
+    margin-top: 30px;
+  }
+
+  .NewOrder .Title h1 {
+    font-size: 1.7rem;
+  }
+
+  .Body .Test {
+    margin-bottom: 40px;
+  }
+  .MaskItemInfo h4 {
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin: 10px 0;
+  }
+
+  .MaskItemInfo img {
+    margin: 0 14px;
+    height: 23px;
+    width: 23px;
+  }
+
+  .MaskPicture {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  }
+
+  .MaskPicture img {
+    max-width: auto;
+    /* padding-left: 40%; */
+    /* left: -30px; */
+    top: 0;
+  }
+
+  .OrderForm {
+    width: 280px;
+  }
+}
+
+@media (min-width: 500px) {
+
+ .NewOrder .Line {
+    height: 11px;
+  }
+
+  .NewOrder .Title {
+    margin-top: 30px;
+  }
+  .NewOrder .Title h1 {
+    font-size: 2.3rem;
+  }
+  .Body .Test {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+  }
+
+  .MaskItemInfo h4 {
+    font-size: 1rem;
+  }
+
+  .MaskItemInfo img {
+    margin: 0 15px;
+    height: 28px;
+    width: 28px;
+  }
+  .MaskPicture {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  }
+
+  .MaskPicture img {
+    max-width: auto;
+    padding: 0 30%;
+    margin-left: 0;
+    margin-top: 25px;
+    left: -20px;
+  }
+
+  .Middle {
+    margin: 0;
+    margin-bottom: 40px;
+  }
+
+  .OrderForm {
+    width: 370px;
+  }
+}
+
+
+@media (min-width: 600px) {
+
+ 
+   .NewOrder .Title h1 {
+     font-size: 2.7rem;
+   }
+   .Body .Test {
+     margin-top: 30px;
+     margin-bottom: 60px;
+   }
+ 
+   .MaskItemInfo h4 {
+     font-size: 1.3rem;
+     font-weight: 400;
+   }
+ 
+   .MaskItemInfo img {
+     margin: 0 11px;
+     height: 27px;
+     width: 27px;
+   }
+   
+ 
+   .MaskPicture img {
+     max-width: auto;
+     padding: 0 25%;
+     padding-bottom: 25%;
+   }
+ 
+ }
+
+ @media (min-width: 700px) {
+
+
+  .NewOrder .Title h1 {
+    font-size: 3.2rem;
+  }
+ 
+  .MaskItemInfo h4 {
+    font-size: 1.5rem;
+  }
+
+  .MaskPicture {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+
+  .MaskPicture img {
+    padding: 0 35%;
+  }
+
+}
+
+@media (min-width: 780px) {
+
+  .NewOrder .Title h1 {
+    font-size: 3.5rem;
+  }
+
+  .NewOrder .Title .Line {
+    height: 12px;
+  }
+
+  .NewOrder .SubTitles h1 {
+    font-size: 1.7rem;
+    margin: 10px 0;
+  }
+
+  .NewOrder .SubTitles h3 {
+    margin: 10px 0;
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+
+  .SubTitles {
+    justify-content: center;
+    width: 330px;
+    border-radius: 25px;
+  }
+
+  .Title h1 {
+    font-size: 2.9rem;
+  }
+  .Body .Test {
+    padding: 0;
+    margin: 60px 0;
+  }
+
+  .MaskItemInfo h4 {
+    font-size: 1.6rem;
+    margin: 10px 0;
+  }
+
+  .MaskItemInfo img {
+    margin: 0 11px;
+    height: 30px;
+    width: 30px;
+  }
+
+  .MaskPicture {
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  }
+
+  .OrderForm {
+    width: 310px;
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+  }
+
+  .Bottom {
+    display: none;
+  }
+
+  .Middle {
+    margin: 70px 0;
+    width: 100%;
+    justify-content: space-around;
+    align-items: stretch;
+  }
+
+  .MiddleTitles {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+}
+
+@media (min-width: 850px) {
+
+  .NewOrder .Title h1 {
+    font-size: 3.9rem;
+  }
+
+  .MaskItemInfo h4 {
+    font-size: 1.7rem;
+  }
+
+  .MaskPicture {
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  }
+
+  .MaskPicture img {
+    padding: 0 28%;
+  }
+
+
+}
+
+@media (min-width: 950px) {
+
+  .NewOrder .Line {
+    height: 14px;
+  }
+
+  .NewOrder .Title h1 {
+    font-size: 4.3rem;
+  }
+  
+  .MaskInfo{
+    margin-right: 5%;
+  }
+
+  .MaskItemInfo img {
+    margin: 0 15px;
+    height: 40px;
+    width: 40px;
+  }
+
+  .MaskItemInfo h4 {
+    font-size: 1.8rem;
+  }
+
+  .NewOrder .SubTitles h1 {
+    font-size: 1.9rem;
+  }
+
+  .NewOrder .SubTitles h3 {
+    font-size: 1.6rem;
+  }
+
+  .Body .Test {
+    margin-top: 90px;
+    margin-bottom: 80px;
+  }
+
+  .MaskPicture {
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  }
+
+  .MaskPicture img {
+    padding: 0 35%;
+  }
+
+ 
+
+  .SubTitles {
+    width: 400px;
+  }
+
+  .OrderForm {
+    width: 380px;
+  }
+}
+
+@media (min-width: 1050px) {
+
+  .NewOrder .SubTitles h1 {
+    font-size: 2.3rem;
+  }
+
+  .NewOrder .SubTitles h3 {
+    font-size: 1.6rem;
+  }
+  
+ 
+
+  .MaskItemInfo h4 {
+    font-size: 1.9rem;
+  }
+
+}
+
+@media (min-width: 1150px) {
+  .MaskPicture {
+    grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+  }
+}
+
+@media (min-width: 1250px) {
+
+  
+  .NewOrder .Title h1 {
+    font-size: 5.2rem;
+  }
+
+  .NewOrder .SubTitles h1 {
+    font-size: 2.8rem;
+  }
+
+  .NewOrder .SubTitles h3 {
+    font-size: 2rem;
+  }
+  
+  
+  .MaskItemInfo img {
+    margin: 0 35px;
+    height: 60px;
+    width: 60px;
+  }
+  
+  .MaskInfo{
+    margin-right: 30px;
+  }
+
+
+  .MaskItemInfo h4 {
+    font-size: 2.6rem;
+  }
+
+  .MaskPicture {
+    grid-template-columns: repeat(auto-fill, minmax(390px, 1fr));
+  }
+
+  .MaskPicture img {
+    padding: 0 40%;
+  }
+
+  .Body .Test {
+    margin-bottom: 100px;
+  }
+
+  .SubTitles {
+    width: 530px;
+  }
+
+  .OrderForm {
+    width: 510px;
+  }
+
+  .Middle {
+    margin: 30px 0;
+  }
+}
+
+
+@media (min-width: 1370px) {
+
+
+  .NewOrder .Title .Line {
+    height: 18px;
+  }
+
+  .NewOrder .Title h1 {
+    font-size: 6rem;
+  }
+  
+  
+  .MaskItemInfo img {
+    margin: 0 40px;
+    height: 60px;
+    width: 60px;
+  }
+  
+
+  .MaskItemInfo h4 {
+    font-size: 2.6rem;
+    margin: 15px 0;
+  }
+
+  .MaskPicture {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  }
+
+  .MaskInfo{
+    margin-right: 4%;
+  }
+
+}
+
+@media (min-width: 1500px) {
+
+
+  .NewOrder .Title h1 {
+    font-size: 6.2rem;
+  }
+  
+  
+  .MaskItemInfo img {
+    margin: 0 40px;
+    height: 70px;
+    width: 70px;
+  }
+  
+
+  .MaskItemInfo h4 {
+    font-size: 2.9rem;
+    margin: 15px 0;
+  }
+
+
+  .MaskPicture {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  }
+
+  .MaskInfo{
+    margin-right: 6%;
+  }
+
+}
+
+@media (min-width: 1700px) {
+
+  .MaskPicture {
+    grid-template-columns: repeat(auto-fill, minmax(460px, 1fr));
+  }
+
+  .MaskPicture img {
+    padding: 0 60%;
+  transform: rotate(40deg);
+  }
+
+  .MaskInfo{
+    margin-right: 9%;
+  }
+
+  .Middle {
+    margin: 50px 0;
+  }
+
+  .SubTitles {
+    width: 560px;
+  }
+
+  .OrderForm {
+    width: 540px;
+  }
+
+}
+
+
