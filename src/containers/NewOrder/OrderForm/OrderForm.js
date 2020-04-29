@@ -102,7 +102,7 @@ export default class OrderForm extends Component {
       street += " " + addressArr[i];
     }
 
-    res.street = street;
+    res.street = addressArr.length > 1 ? street : controls.Street.value;
     res.streetNumber = addressArr[addressArr.length - 1];
     return res;
   };
@@ -124,9 +124,13 @@ export default class OrderForm extends Component {
       const url = "/admin/order";
       this.setState({ loading: true }, async () => {
         try {
+          // console.log(data);
           await axios.post(url, data);
-          window.location.reload();
+          setTimeout(() => {
+            window.location = '';
+          },200);
         } catch (err) {
+          window.location = '';
           console.log(err);
         }
       });
