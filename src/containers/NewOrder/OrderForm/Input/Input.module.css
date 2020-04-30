@@ -96,14 +96,16 @@
 }  
 @media (min-width: 350px) {
   .InputElement {
-    height: 40px;
+    height: 45px;
+    font-size: 1rem;
   }
 
   .InputElement::placeholder {
     font-size: 1rem;
+    line-height: 23px;
   }
   .Input select{
-    height: 40px;
+    height: 45px;
     font-size: 1rem;
   }
 }  
