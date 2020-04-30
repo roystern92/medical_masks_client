@@ -77,7 +77,7 @@ export const getCreateOrderControls = () => {
       elementType: "input",
       elementConfig: {
         type: "text",
-        placeholder: "אמצעי תקשורת",
+        placeholder: "אמצעי תקשורת(טלפון/מייל/אחר)",
       },
       value: "",
       validation: {

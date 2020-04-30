@@ -108,15 +108,18 @@
   }
 }  
 
+
 @media (min-width: 400px) {
   .InputElement {
-    height: 40px;
+    height: 50px;
+    font-size: 1.2rem;
   }
   .InputElement::placeholder {
-    font-size: 1rem;
+    font-size: 1.1rem;
+    line-height: 28px;
   }
   .Input select{
-    height: 40px;
+    height: 50px;
     font-size: 1rem;
   }
 }
