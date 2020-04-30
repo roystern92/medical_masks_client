@@ -1,12 +1,12 @@
 import React, { Component, Fragment } from "react";
-import classes from './withErrorHandler.module.css';
-import Modal from "../../components/UI/Modal/Modal";
+import classes from "./withErrorHandler.module.css";
+import Modal from "../Modal/Modal";
 
 const withErrorHandler = (WrappedComponent, axios) => {
   return class extends Component {
     state = {
       error: null,
-      message: "",
+      message: null,
     };
 
     componentWillMount() {
@@ -15,7 +15,10 @@ const withErrorHandler = (WrappedComponent, axios) => {
         return req;
       });
       this.resInterceptor = axios.interceptors.response.use(
-        (res) => res,
+        (res) => {
+          console.log(res);
+          this.setState({ message: res.data.message });
+        },
         (error) => {
           console.log(error.response.data.message);
           this.setState({ error: error, message: error.response.data.message });
@@ -29,19 +32,27 @@ const withErrorHandler = (WrappedComponent, axios) => {
     }
 
     errorConfirmedHandler = () => {
-      this.setState({ error: null });
+      this.setState({ error: null, message: null });
+      window.location = "";
     };
 
     render() {
-      let errorMessage = !this.state.error ? null : (
-        <div className={classes.Error}>
-          <h1>{this.state.message}</h1>
-        </div>
-      );
+      let msg = 'הזמנתך נקלטה במערכת.';
+
+      if(this.state.message && this.state.error){
+        msg = 'Unfortunately the site is down for a bit of maintenance right now.';
+      }
+      let errorMessage =
+        !this.state.error & !this.state.message ? null : (
+          <div className={classes.Error}>
+            <h1>{msg}</h1>
+            <button onClick={this.errorConfirmedHandler}>סיים</button>
+          </div>
+        );
       return (
         <Fragment>
           <Modal
-            show={this.state.error}
+            show={this.state.error || this.state.message}
             modalClosed={this.errorConfirmedHandler}
           >
             {errorMessage}
