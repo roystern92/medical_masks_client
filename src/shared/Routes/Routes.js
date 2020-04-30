@@ -8,11 +8,11 @@ const NEWORDER_ROUTE = '/new-order';
 
 class Routes extends Component {
   componentDidMount() {
-    console.log("[Routes]componentDidMount");
+    // console.log("[Routes]componentDidMount");
   }
 
   render() {
-    console.log("[Routes] render");
+    // console.log("[Routes] render");
     let routes;
       routes = (
         <Switch>

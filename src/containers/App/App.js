@@ -5,7 +5,7 @@ import Routes from "../../shared/Routes/Routes";
 
 class App extends Component {
   componentDidMount() {
-    console.log("[App] componentDidMount");
+    // console.log("[App] componentDidMount");
   }
 
   render() {
