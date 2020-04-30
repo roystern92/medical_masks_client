@@ -3,16 +3,14 @@ import { Route, Switch, Redirect } from "react-router-dom";
 import NewOrder from '../../containers/NewOrder/NewOrder';
 
 
-const NEWORDER_ROUTE = '/new-order';
+const NEWORDER_ROUTE = '/covid-19/disposable-facemask';
 
 
 class Routes extends Component {
   componentDidMount() {
-    // console.log("[Routes]componentDidMount");
   }
 
   render() {
-    // console.log("[Routes] render");
     let routes;
       routes = (
         <Switch>
