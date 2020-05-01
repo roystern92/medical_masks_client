@@ -130,7 +130,7 @@ class OrderForm extends Component {
           await axios.post(url, data);
           setTimeout(() => {
             this.setState({loading: false});
-          },300);
+          },700);
         } catch (err) {
           window.location = '';
           console.log(err);
