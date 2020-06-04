@@ -36,22 +36,22 @@ class NewOrder extends Component {
         <div className={classes.Info}>
           <div className={classes.SubTitlesInfo}>
             <h1>מארז 100 מסכות פנים</h1>
-            <h1 className={classes.PriceInfo}>185 ש"ח</h1>
+            <h1 className={classes.PriceInfo}>165 ש"ח</h1>
           </div>
 
           <div className={classes.SubTitlesInfo}>
             <h3>(מחיר ליחידה: 1.85 ש"ח)</h3>
-            <h1 className={classes.SaleInfo}>250 ש"ח</h1>
+            <h1 className={classes.SaleInfo}>200 ש"ח</h1>
           </div>
 
           <div className={classes.SubTitlesInfo}>
             <h1>מארז 200 מסכות פנים</h1>
-            <h1 className={classes.PriceInfo}>350 ש"ח</h1>
+            <h1 className={classes.PriceInfo}>300 ש"ח</h1>
           </div>
 
           <div className={classes.SubTitlesInfo}>
             <h3>(מחיר ליחידה: 1.75 ש"ח)</h3>
-            <h1 className={classes.SaleInfo}>500 ש"ח</h1>
+            <h1 className={classes.SaleInfo}>400 ש"ח</h1>
           </div>
         </div>
 
