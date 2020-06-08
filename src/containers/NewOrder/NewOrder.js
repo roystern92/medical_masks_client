@@ -40,7 +40,7 @@ class NewOrder extends Component {
           </div>
 
           <div className={classes.SubTitlesInfo}>
-            <h3>(מחיר ליחידה: 1.85 ש"ח)</h3>
+            <h3>(מחיר ליחידה: 1.65 ש"ח)</h3>
             <h1 className={classes.SaleInfo}>200 ש"ח</h1>
           </div>
 
@@ -50,7 +50,7 @@ class NewOrder extends Component {
           </div>
 
           <div className={classes.SubTitlesInfo}>
-            <h3>(מחיר ליחידה: 1.75 ש"ח)</h3>
+            <h3>(מחיר ליחידה: 1.50 ש"ח)</h3>
             <h1 className={classes.SaleInfo}>400 ש"ח</h1>
           </div>
         </div>
