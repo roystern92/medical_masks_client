@@ -1,6 +1,6 @@
 # Medical Masks Client
 
-A landign page for ordering medical masks.
+A landing page for ordering medical masks.
 
 [![Image from Gyazo](https://i.gyazo.com/b746801237247a087cca19fa0c4deb1a.gif)](https://gyazo.com/b746801237247a087cca19fa0c4deb1a)
 
