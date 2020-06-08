@@ -1,69 +1,36 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Medical Masks Client
 
-## Available Scripts
+A landign page for ordering medical masks.
 
-In the project directory, you can run:
+[![Image from Gyazo](https://i.gyazo.com/b746801237247a087cca19fa0c4deb1a.gif)](https://gyazo.com/b746801237247a087cca19fa0c4deb1a)
 
-### `npm start`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Getting Started
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+* clone this repo
+* npm install
+* npm start
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+npm & node must be installed
 
-### `npm run build`
+### Optional - Run Server
+In order to fully install the app you will need to run the server side.
+* Server - https://github.com/roystern92/tasks_server.git
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Reflection
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+I started by using  the `create-react-app` boilerplate, then adding `react-router`. I used `redux` in order to centralized the application state and `redux-thunk` for handling asynchronous services from the redux store. I used `axios` for handling requests from the client to the server. I created most of the UI component that are used in this project and styled them so i can reuse them in a future projects.    
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The technologies implemented in this project are React, React-Router, Redux, Bootstrap, ReactStrap, React-datepicker, ReactContextMenu and a significant amount of CSS. I chose to use the `create-react-app` boilerplate to minimize initial setup and invest more time in diving into weird technological rabbit holes.
 
-### `npm run eject`
+## Built With
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+* [ReactJS](https://reactjs.org) - The front framework.
+* [React-router](https://www.npmjs.com/package/react-router) - Declarative routing for React.
+* [Redux](https://www.npmjs.com/package/redux) - Predictable state container for JavaScript web apps.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Authors
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-# medical_masks_client
+* **Roy Stern** - *Initial work*
